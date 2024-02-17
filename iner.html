@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./favicon/calculator_icon.ico" type="image/x-icon">
+    <script defer src="script.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__img" src="./img/seo-social.svg" alt="calculator-icon">
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li><a class="header__link" href="https://okcalc.com/ru/" target="_blank">OKCALC</a></li>
+                <li><a class="header__link" href="https://www.desmos.com/scientific?lang=ru" target="_blank">Desmos</a></li>
+                <li><a class="header__link" href="https://mathsolver.microsoft.com/ru/algebra-calculator" target="_blank">Solver</a></li>
+                <li><a class="header__link" href="https://www.mathway.com/ru/Algebra" target="_blank">Mathway</a></li>
+            </ul>
+        </nav>   
+    </header>
+    <div class="mobile-navigation">
+        <label for="toggle-id">
+            <img class="mobile-navigation-burger" src="./favicon/Burger-icon.svg" alt="burger">
+        </label>
+
+        <input type="checkbox" id="toggle-id" class="mobile-navigation-toggler">
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li><a class="navigation__link" href="https://okcalc.com/ru/" target="_blank">OKCALC</a></li>
+                <li><a class="navigation__link" href="https://www.desmos.com/scientific?lang=ru" target="_blank">Desmos</a></li>
+                <li><a class="navigation__link" href="https://mathsolver.microsoft.com/ru/algebra-calculator" target="_blank">Math Solver</a></li>
+                <li><a class="navigation__link" href="https://www.mathway.com/ru/Algebra" target="_blank">Mathway</a></li>
+            </ul>
+            <label for="toggle-id" class="mobile-navigation-close">
+                <img class="mobile-navigation-cross" src="./favicon/Cross-icon.svg" alt="cross">
+            </label>
+        </nav>
+    </div>
+
+    <main class="main">
+        <div class="main__form">
+            <h1 class="main__title">Calculator</h1>
+            <input class="main__num" id="num-1" type="number" placeholder="Первое число">
+            <input class="main__num" id="num-2" type="number" placeholder="Второе число">
+            <div class="main__buttons">
+                <input class="main__butt" id="plus" type="submit" value="+">
+                <input class="main__butt" id="minus" type="submit" value="-">
+                <input class="main__butt" id="multiply" type="submit" value="x">
+                <input class="main__butt" id="share" type="submit" value="÷">
+            </div>
+            <div class="main__btn">
+                <input class="main__button" id="btn" type="submit" value="Нажать">
+            </div>
+            <p class="main__result" id="result"></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__text">
+            <p>The creator of this site is <a class="footer__link" href="https://vk.com/id551217110" target="_blank">Albert</a></p>
+        </div>
+    </footer>
+</body>
+</html>
